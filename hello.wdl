@@ -1,10 +1,7 @@
 version 1.0
 
 workflow hello_world {
-  input {
-    String name
-  }
-  
+  String name
   call say_hello {
     input:
       name = name
@@ -12,8 +9,7 @@ workflow hello_world {
 }
 
 task say_hello {
-  input:
-    String name
+  String name
 
   command {
     echo "Hello, World!"
