@@ -1,10 +1,10 @@
 version 1.0
 
 workflow hello_world {
-  String name
+  String Name
   call say_hello {
     input:
-      name = name
+      name = Name
   }
 }
 
