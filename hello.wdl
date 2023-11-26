@@ -1,4 +1,4 @@
-version 1.0
+version 1
 
 workflow hello_world {
   input{
@@ -11,7 +11,7 @@ workflow hello_world {
 }
 
 task say_hello {
-  input
+  input {
     String name
   }
 
