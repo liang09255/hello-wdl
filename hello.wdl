@@ -11,7 +11,7 @@ workflow hello_world {
 }
 
 task say_hello {
-  input{
+  input
     String name
   }
 
